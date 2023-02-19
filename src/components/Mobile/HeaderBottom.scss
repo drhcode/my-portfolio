@@ -1,0 +1,46 @@
+$primaryColor: #92b292;
+$secondaryColor: #063250;
+$thirdColor: #e6edf1;
+$hoverColor: #667d66;
+
+.headerBottomMainDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 10px;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 5px 5px;
+}
+
+// media queries
+@media (min-width: 550px) {
+  .headerBottomMainDiv {
+    display: none;
+  }
+}
+
+.home,
+.works,
+.contact,
+.about {
+  background: $primaryColor;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.home:hover,
+.works:hover,
+.contact:hover,
+.about:hover {
+  border-radius: 15px;
+  transition: 0.3s;
+  background: $hoverColor;
+}
